@@ -1,35 +1,12 @@
-Bài 1: Tính điểm trung bình
-BEGIN
-Input a, b, c
-Average = (a + b + c)/3
-Display Average
-END
-Bài 2: Chuyển đổi tiền tệ 
-BEGIN
-Display “Nhap so tien”
-Input a
-b = 23000*a
-Display b
-END
-Bài 3: Tìm giá trị lớn nhất
-BEGIN
-Display “Nhap gia tri ba so”
-Input a, b, c
-If a > b and a > c Display a
- if b > c display “gia tri lon nhat la b”
-Else display “gia tri lon nhat c”
-End if
-END
 Bài 5: Thuật toán có điều kiện
+BEGIN
 Display “nhap diem”
 Input a
 If a >=  75 display “hoc sinh loai A”
- if a < 75 AND a >= 60 Display “hoc sinh loai B”
-End if
- if a < 60 AND a >= 45 Display “hoc sinh loai C”
-End if
- if a < 45 AND a >= 35 Display “hoc sinh loai D”
-End if
+ else if a >= 60 Display “hoc sinh loai B”
+ else if a >= 45 Display “hoc sinh loai C”
+ else if a >= 35 Display “hoc sinh loai D”
+ else display "hoc sinh loai E"
 Else Display “hoc sinh loai E”
 End if
 END
