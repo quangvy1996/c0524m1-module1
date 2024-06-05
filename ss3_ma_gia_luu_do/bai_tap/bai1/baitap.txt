@@ -1,0 +1,13 @@
+Bài 1: Tính điểm trung bình
+BEGIN
+Input a, b, c
+Average = (a + b + c)/3
+Display Average
+END
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+
+Bài 2: Chuyển đổi tiền tệ 
+BEGIN
+Display “Nhap so tien”
+Input a
+b = 23000*a
+Display b
+END
+
+
+
+
+
+

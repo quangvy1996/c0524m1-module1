@@ -1,0 +1,17 @@
+Bài 3: Tìm giá trị lớn nhất
+BEGIN
+Display “Nhap gia tri ba so”
+Input a, b, c
+If a > b and a > c Display a
+ if b > c display “gia tri lon nhat la b”
+Else display “gia tri lon nhat c”
+End if
+END
+
+
+
+
+
+
+
+
