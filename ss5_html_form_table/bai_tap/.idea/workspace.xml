@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f5db15-3645-4375-8849-442c528f8bb3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuc_hanh/tao_form_co_ban/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuc_hanh/tao_form_co_ban/.idea/bai_tap.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuc_hanh/tao_form_co_ban/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuc_hanh/tao_form_co_ban/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../thuc_hanh/tao_form_co_ban/simpleform.html" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/tao_form_dang_ky_nguoi_dung.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh/tao_form_lay_survey_khach_hang/tao_form_lay_survey_khach_hang.html" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh/tao_form_lay_survey_khach_hang/tao_form_lay_survey_khach_hang.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
       <workItem from="1717684757823" duration="66000" />
       <workItem from="1717685220332" duration="445000" />
       <workItem from="1717722594834" duration="3861000" />
-      <workItem from="1717726662629" duration="4619000" />
+      <workItem from="1717726662629" duration="6212000" />
     </task>
     <servers />
   </component>
