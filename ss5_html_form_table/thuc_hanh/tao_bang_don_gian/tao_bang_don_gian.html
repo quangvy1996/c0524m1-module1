@@ -4,29 +4,38 @@
     <meta charset="UTF-8">
     <title>Tạo bảng dơn giản</title>
     <style>
-        table {border-collapse: collapse}
-        td, th {border: 1px solid black;}
+        table {border-collapse: collapse;
+               width: 97%;
+               height: 200px;
+               margin: 20px
+               }
+
+        td, th {border: 1px solid black;
+                padding-left: 10px }
+        p {font-size: 20px;
+            color: blue;}
+
     </style>
 </head>
 <body>
 <h1 style="color: blue; text-transform: uppercase; text-align: center">Thời khóa biểu</h1>
 <p>
-    <span style="margin-left: 30px">Lớp: T09081</span>
-    <span style="margin-left: 1000px">Thời gian học: 13h30 - 17h30</span>
+    <span style="margin-left: 40px">Lớp: T09081</span>
+    <span style="margin-left: 900px">Thời gian học: 13h30 - 17h30</span>
 </p>
 <p>
-    <span>Giáo viên: KhoaVN</span>
-    <span>Ngày học thứ: 3, 5, 7</span>
+    <span style="margin-left: 40px">Giáo viên: KhoaVN</span>
+    <span style="margin-left: 912px">Ngày học thứ: 3, 5, 7</span>
 </p>
-<p>Phòng học: class3/Lab3</p>
+<p style="margin-left: 40px">Phòng học: class3/Lab3</p>
 <table>
-    <tr>
+    <tr style="text-align: center">
         <th colspan="3"></th>
-        <th>Thứ 3</th>
-        <th>Thứ 5</th>
-        <th>Thứ 7</th>
+        <th style="background-color: yellow">Thứ 3</th>
+        <th style="background-color: yellow">Thứ 5</th>
+        <th style="background-color: yellow">Thứ 7</th>
     </tr>
-    <tr>
+    <tr style="text-align: center; background-color: orange;">
         <th>Tuần</th>
         <th>Ngày bắt đầu</th>
         <th>Ngày kết thúc</th>
