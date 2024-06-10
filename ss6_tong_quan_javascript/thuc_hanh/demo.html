@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="name">
+<p style="background: aqua" id="content">Hello</p>
+
+<button onclick="display()">Click</button>
+</body>
+<script>
+    function display() {
+       var name = document.getElementById("name").value;
+       let name2 = prompt("Nhập tên 2");
+       alert("tên vừa nhập là "+ name2);
+        console.log(name2)
+        // document.getElementById("content").innerText=name+name2;
+        // document.getElementById("content").style.background="red";
+    }
+</script>
+</html>
