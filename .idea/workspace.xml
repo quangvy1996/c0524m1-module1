@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss6_tong_quan_javascript/thuc_hanh/hien_thi_dau_ra/hien_thi_dau_ra.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/bai_tap/tien_te.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/thuc_hanh/khai_bao_va_su_dung_bien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/module1.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nhap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_co_ban/tablesimple.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_co_ban/tablesimple.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_don_gian/nhap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_don_gian/tao_bang_nang_cao.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/bai_tap/Ung_dung_may_tinh/may_tinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/bai_tap/ung_dung_chuyen_doi_tien_te/tien_te.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/bai_tap/tien_te.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,25 +25,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 5
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2hfWcwwzROGlRyM97bXe9qpvXGn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap\ung_dung_chuyen_doi_tien_te" />
+      <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -70,6 +67,10 @@
       <updated>1717985696955</updated>
       <workItem from="1717985698031" duration="52000" />
       <workItem from="1718008982089" duration="4572000" />
+      <workItem from="1718021683589" duration="833000" />
+      <workItem from="1718029767031" duration="627000" />
+      <workItem from="1718067822400" duration="12365000" />
+      <workItem from="1718096234308" duration="4317000" />
     </task>
     <servers />
   </component>

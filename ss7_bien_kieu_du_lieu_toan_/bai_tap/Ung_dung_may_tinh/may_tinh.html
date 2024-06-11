@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính</title>
+    <style>
+        .h1 {
+            width: 12px
+        }
+    </style>
+</head>
+<body>
+<h1>Calculator</h1>
+<table>
+    <tr>
+        <td><input id="factor1" name="factor1" type="number"></td>
+        <td><input id="factor2" name="factor2" type="number"></td>
+    </tr>
+</table>
+    <table>
+        <tr>
+            <td>
+                <button id="add" type="button" onclick="add()">Addition(+)</button>
+            </td>
+            <td>
+                <button id="sub" type="button" onclick="sub()">Subtraction(-)</button>
+            </td>
+            <td>
+                <button id="mul" type="button" onclick="mul()">Multiplication(X)</button>
+            </td>
+            <td>
+                <button id="div" type="button" onclick="div()">Division(/)</button>
+            </td>
+        </tr>
+</table>
+<h2 id="result"></h2>
+<script>
+
+    function add() {
+        let input1 = +document.getElementById("factor1").value
+        let input2 = +document.getElementById("factor2").value
+        document.getElementById("result").innerHTML= input1 + input2;
+    }
+
+    function sub() {
+        let input1 = +document.getElementById("factor1").value
+        let input2 = +document.getElementById("factor2").value
+        document.getElementById("result").innerHTML = input1 - input2;
+    }
+
+    function mul() {
+        let input1 = +document.getElementById("factor1").value
+        let input2 = +document.getElementById("factor2").value
+        document.getElementById("result").innerHTML = input1 * input2;
+    }
+
+    function div() {
+        let input1 = +document.getElementById("factor1").value
+        let input2 = +document.getElementById("factor2").value
+        document.getElementById("result").innerHTML = input1 / input2;
+    }
+</script>
+</body>
+</html>
