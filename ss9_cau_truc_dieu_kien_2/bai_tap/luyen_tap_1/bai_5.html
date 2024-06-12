@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let test = +prompt("Nhập điểm kiểm tra");
+    let midtermTest = +prompt("Nhập điểm kiểm tra giữa kỳ");
+    let finalTest = +prompt("Nhập điểm kiểm tra cuối kỳ");
+    let averageGrade = (test + midtermTest * 2 + finalTest * 3)/6
+    if (averageGrade >=8) {alert("Học sinh giỏi")}
+    else if (averageGrade >= 6.5) {alert("Học sinh khá")}
+    else if (averageGrade >= 5) {alert("Học sinh trung bình")}
+    else if (averageGrade >= 3.5) {alert("Học sinh yếu")}
+    else {"Học sinh kém"}
+</script>
+</body>
+</html>

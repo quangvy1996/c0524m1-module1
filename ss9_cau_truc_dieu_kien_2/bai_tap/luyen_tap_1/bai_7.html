@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 7</title>
+</head>
+<body>
+<script>
+    const compulsoryCharge = 25000
+    let minutes = +prompt("Nhập số phút gọi")
+    let charge = 0
+    if (minutes > 200) {
+        charge = (minutes - 200) * 200 + 150 * 400 + 50 * 600
+    } else if (minutes > 50) {
+        charge = (minutes - 50) * 400 + 50 * 600
+    } else {
+        charge = minutes * 600
+    }
+    let totalCharge = charge + compulsoryCharge
+    alert("Tổng phí là " + totalCharge)
+</script>
+</body>
+</html>

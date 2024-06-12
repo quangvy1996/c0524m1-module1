@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<h1>Nhập chỉ số cân nặng</h1>
+<table>
+    <tr>
+        <th>Weight</th>
+        <th>Height</th>
+    </tr>
+    <tr>
+        <td><input id="weight" name="weight" type="number"></td>
+        <td><input id="height" name="height" type="number"></td>
+    </tr>
+    <tr style="border-bottom: 1px solid black">
+        <td>BMI</td>
+        <td>Interpretation</td>
+    </tr>
+    <tr>
+        <td><p id="bmi"></p></td>
+        <td><p id="interpretation"></p></td>
+    </tr>
+</table>
+<button type="button" onclick="interpretation()">Kiểm tra</button>
+<script>
+    let weight = document.getElementById("weight")
+    let height = document.getElementById("height")
+
+    function interpretation() {
+        let BMI = weight.value / (height.value ** 2);
+        if (BMI < 18) {
+            document.getElementById("bmi").innerHTML = BMI;
+            document.getElementById("interpretation").innerHTML = "Underweight";
+        } else if (BMI < 25) {
+            document.getElementById("bmi").innerHTML = BMI;
+            document.getElementById("interpretation").innerHTML = "Normal";
+        } else if (BMI < 30) {
+            document.getElementById("bmi").innerHTML = BMI;
+            document.getElementById("interpretation").innerHTML = "Overwegiht";
+        } else {
+            document.getElementById("bmi").innerHTML = BMI;
+            document.getElementById("interpretation").innerHTML = "Obese";
+        }
+    }
+</script>
+</body>
+</html>
