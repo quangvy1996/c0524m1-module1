@@ -6,8 +6,8 @@
 </head>
 <body>
 <script>
-    let totalKwhUsed = +prompt("Nhập số điện đã dùng")
-    let price = 0
+    let totalKwhUsed = +prompt("Nhập số điện đã dùng");
+    let price = 0;
     if (totalKwhUsed <= 50) {
         price = totalKwhUsed * 1806
     } else if (totalKwhUsed <= 100) {
@@ -20,8 +20,8 @@
         price = (totalKwhUsed - 300) * 3050 + 100 * 2729 + 100 * 2167 + 50 * 1866 + 50 * 1806
     } else {
         price = (totalKwhUsed - 400) * 3151 + 100 * 3050 + 100 * 2729 + 100 * 2167 + 50 * 1866 + 50 * 1806
-    }
-    alert("Tổng tiền điện là " + price)
+    };
+    alert("Tổng tiền điện là " + price);
 </script>
 </body>
 </html>

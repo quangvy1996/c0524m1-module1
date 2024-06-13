@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_10.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_11.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_12.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_8.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_9.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_5.html" afterDir="false" />
-    </list>
+    <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,7 +74,7 @@
       <workItem from="1718176523937" duration="2281000" />
       <workItem from="1718180837410" duration="6184000" />
       <workItem from="1718202428092" duration="4817000" />
-      <workItem from="1718239791024" duration="9784000" />
+      <workItem from="1718239791024" duration="10203000" />
     </task>
     <servers />
   </component>
