@@ -5,18 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/can_nang/chi_so_can_nang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/cau_lenh_switch_case/cau_lenh_switch_case.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/may_tinh_don_gian/may_tinh_don_gian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/bai_tap/Ung_dung_may_tinh/may_tinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_bien_kieu_du_lieu_toan_/bai_tap/Ung_dung_may_tinh/may_tinh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1\ss9_cau_truc_dieu_kien_2\bai_tap" />
       <recent name="E:\QuangVy\c0524m1-module1\ss9_cau_truc_dieu_kien_2\bai_tap\can_nang" />
       <recent name="E:\QuangVy\c0524m1-module1" />
       <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap\ung_dung_chuyen_doi_tien_te" />
@@ -85,7 +80,7 @@
       <workItem from="1718154824896" duration="12085000" />
       <workItem from="1718176523937" duration="2281000" />
       <workItem from="1718180837410" duration="6184000" />
-      <workItem from="1718202428092" duration="3619000" />
+      <workItem from="1718202428092" duration="4817000" />
     </task>
     <servers />
   </component>
