@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuế thu nhập theo tháng</title>
+</head>
+<body>
+<script>
+  let income = +prompt("Nhập thu nhập/tháng (triệu đồng)")
+  let netIncome = 0
+  if (income <= 5) {netIncome = income * (1 - 0.05)}
+  else if (income <= 10) {netIncome = (income * (1 - 0.1)).toFixed(2)}
+  else if (income <= 18) {netIncome = (income * (1 - 0.15)).toFixed(2)}
+  else if (income <= 32) {netIncome = (income * (1 - 0.2)).toFixed(2)}
+  else if (income <= 52) {netIncome = (income * (1 - 0.25)).toFixed(2)}
+  else if (income <= 80) {netIncome = (income * (1 - 0.3)).toFixed(2)}
+  else {netIncome = income * (1 - 0.35)}
+  alert("Thu nhập sau thuế là: " + netIncome)
+</script>
+</body>
+</html>

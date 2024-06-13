@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+ let deposit = +prompt("Nhập số tiền gửi")
+ let month = +prompt("Nhập kì hạn gửi")
+ let value = 0
+ if (1 <= month <= 3) {value = deposit * (1 +  3.25 * month / 12)}
+ else if (month <= 6) {value = deposit * (1 + 4.7 * month / 12)}
+ else if (month <= 9) {value = deposit * (1 + 4.9 * month / 12)}
+ else  {value = deposit * 5.1 * month / 12}
+ alert("Tiền nhận được khi đến hạn: " + value)
+</script>
+</body>
+</html>
