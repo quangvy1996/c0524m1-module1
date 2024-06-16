@@ -5,11 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_11.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/bang_cuu_chuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/so_nguyen_to.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_tap_them.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/can_nang/chi_so_can_nang.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/can_nang/chi_so_can_nang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/cau_lenh_switch_case/cau_lenh_switch_case.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/cau_lenh_switch_case/cau_lenh_switch_case.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_4.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_1/bai_4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_12.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_12.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_7.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_8.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_8.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_9.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss9_cau_truc_dieu_kien_2/bai_tap/luyen_tap_2/bai_9.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +38,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -43,14 +59,15 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1" />
       <recent name="E:\QuangVy\c0524m1-module1\ss9_cau_truc_dieu_kien_2\bai_tap" />
       <recent name="E:\QuangVy\c0524m1-module1\ss9_cau_truc_dieu_kien_2\bai_tap\can_nang" />
-      <recent name="E:\QuangVy\c0524m1-module1" />
       <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap\ung_dung_chuyen_doi_tien_te" />
       <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap" />
     </key>
@@ -80,7 +97,16 @@
       <workItem from="1718176523937" duration="2281000" />
       <workItem from="1718180837410" duration="6184000" />
       <workItem from="1718202428092" duration="4817000" />
-      <workItem from="1718239791024" duration="10682000" />
+      <workItem from="1718239791024" duration="13596000" />
+      <workItem from="1718261316819" duration="7527000" />
+      <workItem from="1718333140552" duration="37000" />
+      <workItem from="1718334650906" duration="3876000" />
+      <workItem from="1718348513049" duration="9063000" />
+      <workItem from="1718375642864" duration="2422000" />
+      <workItem from="1718432623392" duration="11976000" />
+      <workItem from="1718461783447" duration="6141000" />
+      <workItem from="1718507782671" duration="5096000" />
+      <workItem from="1718517791996" duration="1373000" />
     </task>
     <servers />
   </component>

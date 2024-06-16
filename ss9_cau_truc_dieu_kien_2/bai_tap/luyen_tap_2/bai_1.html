@@ -7,6 +7,7 @@
 <body>
 <script>
     let celcius = +prompt("Nhập độ C");
+    if (celcius / celcius !== 1) {alert("Đây là không phải la số")}
     let fahrenheit = celcius * (9/5) + 32;
     alert(fahrenheit + " F");
 </script>
