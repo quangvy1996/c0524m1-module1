@@ -9,13 +9,14 @@
     let deposit = +prompt("Nhập số tiền gửi");
     let month = +prompt("Nhập số tháng gửi");
     let interest = +prompt("Nhập lãi");
-    let i = 0;
-    let total = 1;
-    while (i < month) {
-        total = deposit * (1 + (interest / 100) * (month / 12));
+    let i = 1;
+    let lai = 0;
+    while (i <= month) {
+        lai =(deposit*interest/100)
+        deposit+=lai;
         i++;
     }
-    alert("tổng tiền là " + total)
+    alert("tổng tiền là " + deposit)
 </script>
 </body>
 </html>
