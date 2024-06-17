@@ -6,9 +6,7 @@
 </head>
 <body>
 <script>
-    let sum = 0;
-    let count = 0;
-    let i = 7
+
     // {
     //     for (i = 7; ; i++) {
     //         if (count === 30) {
@@ -23,10 +21,14 @@
     //         }
     //     }
     // }
+    let sum = 0;
+    let count = 0;
+    let i = 7
     while (count < 30) {
         if (i % 7 === 0) {
             sum += i;
             count++;
+            document.write("lần thứ " + count +" la "+sum + "<br>");
         }
         i++
     }
