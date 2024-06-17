@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính lãi ngân hàng</title>
+</head>
+<body>
+<script>
+    let deposit = +prompt("Nhập số tiền gửi");
+    let month = +prompt("Nhập số tháng gửi");
+    let interest = +prompt("Nhập lãi");
+    let i = 0;
+    let total = 1;
+    while (i < month) {
+        total = deposit * (1 + (interest / 100) * (month / 12));
+        i++;
+    }
+    alert("tổng tiền là " + total)
+</script>
+</body>
+</html>

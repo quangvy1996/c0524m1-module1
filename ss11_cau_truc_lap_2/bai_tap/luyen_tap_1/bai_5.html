@@ -9,17 +9,18 @@
     let n1 = 0;
     let n2 = 1;
     let nextTerm;
-    let tong = 0;
+    let sum = 0;
 
-    console.log('Fibonacci Series:');
+    console.log('Fibonaci Series:');
 
     for (let i = 1; i <= 20; i++) {
         document.write(n1 + "<br>");
+        sum += n1;
         nextTerm = n1 + n2;
         n1 = n2;
         n2 = nextTerm;
-        tong += nextTerm;}
-     document.write(tong)
+        }
+     document.write("tong la " + sum)
 </script>
 </body>
 </html>
