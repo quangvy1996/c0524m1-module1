@@ -8,20 +8,29 @@
 <script>
     let sum = 0;
     let count = 0;
-    {
-        for (i = 7; ; i++) {
-            if (count === 30) {
-                document.write("tong " + sum);
-                break
-            } else {
-                if (i % 7 === 0) {
-                    sum += i;
-                    count++;
-                    document.write(i + "<br>")
-                }
-            }
+    let i = 7
+    // {
+    //     for (i = 7; ; i++) {
+    //         if (count === 30) {
+    //             document.write("tong " + sum);
+    //             break
+    //         } else {
+    //             if (i % 7 === 0) {
+    //                 sum += i;
+    //                 count++;
+    //                 document.write(i + "<br>")
+    //             }
+    //         }
+    //     }
+    // }
+    while (count < 30) {
+        if (i % 7 === 0) {
+            sum += i;
+            count++;
         }
+        i++
     }
+    document.write(sum)
 </script>
 </body>
 </html>
