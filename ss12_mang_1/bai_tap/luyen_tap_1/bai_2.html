@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>10 phần tử khác nhau có giá trị lớn nhất và vị trí của nó</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let count = 0;
+    for (let i = 0; i < 10; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1))
+    }
+    for (let i = 0; i < 10; i++) {
+        for (let j = 0; j < 10; j++) {
+            if (array[i] === array[j]) {
+                count++
+            }
+        }
+
+    }
+    if (count > 10) {
+        alert("Giá trị trùng nhau");
+    }
+
+    let max = array[0];
+    let index = 0;
+    for (let i = 0; i < 10; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            index = i
+        }
+    }
+    alert("Giá trị lớn nhất là " + max + " tại vị trí " + index);
+
+
+</script>
+</body>
+</html>

@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/nhap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/luyen_tap_1/bai_9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/su_dung_cac_ham_co_san/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/su_dung_cac_ham_co_san/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/su_dung_cac_ham_co_san/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/tu_dien/tu_dien.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_6.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_6.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_1/bai_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/so_nguyen_to.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/so_nguyen_to.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss12_mang_1/bai_tap/nhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss12_mang_1/bai_tap/nhap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +62,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1\ss12_mang_1\bai_tap" />
       <recent name="E:\QuangVy\c0524m1-module1" />
       <recent name="E:\QuangVy\c0524m1-module1\ss9_cau_truc_dieu_kien_2\bai_tap" />
       <recent name="E:\QuangVy\c0524m1-module1\ss9_cau_truc_dieu_kien_2\bai_tap\can_nang" />
       <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap\ung_dung_chuyen_doi_tien_te" />
-      <recent name="E:\QuangVy\c0524m1-module1\ss7_bien_kieu_du_lieu_toan_\bai_tap" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -95,7 +106,11 @@
       <workItem from="1718517791996" duration="4406000" />
       <workItem from="1718528460360" duration="7687000" />
       <workItem from="1718585529763" duration="10418000" />
-      <workItem from="1718607754818" duration="5976000" />
+      <workItem from="1718607754818" duration="7871000" />
+      <workItem from="1718672257881" duration="11918000" />
+      <workItem from="1718692909009" duration="8735000" />
+      <workItem from="1718719851568" duration="5966000" />
+      <workItem from="1718759056545" duration="9843000" />
     </task>
     <servers />
   </component>

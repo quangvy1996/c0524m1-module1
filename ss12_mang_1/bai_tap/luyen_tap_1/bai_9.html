@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nối 2 mảng</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < 10; i++) {
+        a[i] = +prompt("Nhập phần tử thứ " + (i + 1) + " của a")
+    }
+    for (let i = 0; i < 10; i++) {
+        b[i] = +prompt("Nhập phần tử thứ " + (i + 1) + " của b")
+    }
+    for (let i = 0; i < 10; i++) {
+        a.push(b[i])
+    }
+    for (let i = 0; i < 20; i++) {
+        c.push(a[i])
+    }
+
+    document.write(c)
+</script>
+</body>
+</html>

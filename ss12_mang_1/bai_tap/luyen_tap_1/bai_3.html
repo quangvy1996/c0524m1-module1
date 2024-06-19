@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị giá trị lớn nhất và tính giá trị trung bình</title>
+</head>
+<body>
+<script>
+    let array = [];
+    let n = +prompt("nhập số lượng phần tử");
+
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1))
+    }
+    let max = array[0];
+    let average = 0;
+    for (let i = 0; i < n; i++) {
+        if (array[i] > max) {
+            max = array[i]
+        }
+    }
+    for (let i = 0; i < n; i++) {
+        average += array[i] / n
+    }
+
+    alert("Phần tử lớn nhất la " + max + " giá tri trung bình là " + average)
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<label>Nhập từ:</label>
+<input type="text" name="word" id="word">
+<button type="button" onclick="translate1()">Dịch</button>
+<p id="result"></p>
+<script>
+    let eng = ["apple","banana","pomelo","orange","watermelon","grape"];
+    let viet = ["táo","chuối","bưởi","cam","dưa hấu","nho"];
+    function translate1() {
+        let str = document.getElementById("word").value;
+        let result;
+        for (let i = 0; i < eng.length; i++) {
+            if (str === eng[i]) {
+                result = viet[i];
+            }
+        }
+        if (result === undefined){
+            result="ko"
+        }
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+</body>
+</html>

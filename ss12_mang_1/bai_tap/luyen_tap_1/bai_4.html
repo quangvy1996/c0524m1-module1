@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược phần tử</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập độ dài mảng");
+    let array = [];
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1))
+    }
+    document.write(array + "<br>");
+    let first = 0;
+    let last = array.length - 1;
+    let b;
+    while (first < last) {
+        b = array[first];
+        array[first] = array[last];
+        array[last] = b;
+        first++;
+        last--;
+    }
+    document.write("Sau khi đảo: " + array);
+</script>
+</body>
+</html>

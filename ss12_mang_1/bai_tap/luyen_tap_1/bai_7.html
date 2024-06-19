@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra V có thuộc mảng hay không</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("nhập độ dài mảng"));
+    let array = [];
+    for (let i = 0; i < n; i++) {
+        array[i] = +prompt("Nhập phần tử thứ " + (i + 1))
+    }
+    document.write(array + "<br>")
+    let V = +prompt("Nhập phần tử V")
+    let count = 0
+    let index
+    for (let i = 0; i < n; i++) {
+        if (V === array[i]) {
+            alert("V is in the array");
+            index = i;
+            count++;
+        }
+    }
+    if (count === 0) {
+        alert("V is not in the array")
+    }
+    document.write("Số V là: " + V + " ở vị trí " + index + "<br>")
+
+    while (index < n - 1) {
+        let b = array[index];
+        array[index] = array[index + 1];
+        array[index + 1] = b;
+        index++;
+    }
+    array[n - 1] = 0
+    document.write(array)
+</script>
+</body>
+</html>
