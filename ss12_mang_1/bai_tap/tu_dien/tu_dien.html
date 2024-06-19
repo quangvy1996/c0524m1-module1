@@ -14,14 +14,14 @@
     let viet = ["táo","chuối","bưởi","cam","dưa hấu","nho"];
     function translate1() {
         let str = document.getElementById("word").value;
-        let result;
+        let result = "ko có"
         for (let i = 0; i < eng.length; i++) {
             if (str === eng[i]) {
                 result = viet[i];
             }
         }
         if (result === undefined){
-            result="ko"
+            result="ko có"
         }
         document.getElementById("result").innerHTML = result;
     }

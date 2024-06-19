@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mảng ký tự</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập độ dài mảng");
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử thứ " + (i + 1))
+    }
+    let count = 0
+    for (let i = 0; i < n; i++) {
+        if (arr[i] *1) {
+            count++
+        }
+    }
+    document.write(arr + "")
+    document.write("Số ký tự số là " + count)
+
+</script>
+</body>
+</html>
