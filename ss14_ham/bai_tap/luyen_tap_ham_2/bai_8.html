@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược mảng số nguyên</title>
+</head>
+<body>
+<script>
+    let arrLength = +prompt("Nhập độ dài mảng");
+    let array1 = [];
+
+    function reverse(arr) {
+        debugger
+        for (let i = 0; i < arrLength; i++) {
+            arr[i] = prompt(`Nhập phần tử thứ ${(i + 1)}`)
+        }
+        alert("Before " + arr);
+        alert("After " + arr.reverse());
+    }
+
+    reverse(array1);
+</script>
+</body>
+</html>

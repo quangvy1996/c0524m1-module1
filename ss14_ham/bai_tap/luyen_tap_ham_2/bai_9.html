@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrLength = +prompt("Nhập độ dài mảng");
+    let array = [];
+    let char = prompt("Nhập 1 ký tự");
+    let count = 0;
+
+    function testChar(arr, a) {
+        for (let i = 0; i < arrLength; i++) {
+            arr[i] = prompt(`Nhập phần tử thứ ${(i + 1)}`)
+        }
+        for (let i = 0; i < arrLength; i++) {
+            if (a === arr[i]) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            alert(`Ký tự ${a} xuất hiện ${count} lần`)
+        } else {
+            alert("-1")
+        }
+    }
+    testChar(array,char);
+</script>
+</body>
+</html>

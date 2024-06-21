@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ngôi sao</title>
+</head>
+<body>
+<script>
+    let result;
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function starsSwitch() {
+        debugger;
+        for (let i = 0; i < star1.length; i++) {
+            if (starName === star1[i]) {
+                result = star2[i];
+                return alert(result);
+            }
+        }
+        return alert("Không tìm thấy")
+    }
+
+    let starName = prompt("Nhập vào sao");
+    starsSwitch(starName);
+
+</script>
+</body>
+</html>

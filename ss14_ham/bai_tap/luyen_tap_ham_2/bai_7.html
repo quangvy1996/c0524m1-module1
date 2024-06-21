@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number1 = +prompt("Nhập số 1");
+    let number2 = +prompt("Nhập số 2");
+    let temp;
+    alert("before: " + number1 + " " + number2)
+
+    function swap(a, b) {
+        temp = a;
+        a = b;
+        b = temp;
+        alert("after: " + a + " " + b)
+    }
+
+    swap(number1, number2);
+</script>
+</body>
+</html>
