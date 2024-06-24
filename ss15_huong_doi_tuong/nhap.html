@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let SinhVien = function (ma,ten){
+        // thuộc tính
+        this.ma= ma;
+        this.ten = ten;
+        // hành vi
+        this.hoc = function (monHoc){
+            console.log(this.ten +" dang hoc mon :"+ monHoc)
+        }
+        this.play =function (){
+
+        }
+    }
+
+    class Student{
+        constructor(id, name) {
+            // thuộc tính
+            this.id =id;
+            this.name = name;
+        }
+        // hành vi
+        study(subject){
+            console.log(this.name +" dang hoc mon :"+ subject)
+        }
+    }
+let student1 = new Student(11,"chánh");
+let student2 = new Student(2,"chánh");
+let student3 = new Student(3,"chánh");
+let student4 = new Student(11,"chánh");
+
+
+</script>
+</body>
+</html>

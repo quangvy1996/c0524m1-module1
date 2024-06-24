@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrLength = +prompt("Nhập độ dài mảng")
+    let array = []
+    let a = "ok"
+    for (let i = 0; i < arrLength; i++) {
+        array[i] = +prompt(`Nhập phần tử thứ ${(i + 1)}`)
+    }
+    let result = array[1] - array[0]
+    for (let i = 0; i < arrLength -1; i++) {
+        if (array[i + 1] - array[i] !== result ) {
+            a = "no";break
+        }
+    }
+    alert(a)
+
+
+
+</script>
+</body>
+</html>

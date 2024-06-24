@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayLength = +prompt("Nhập độ dài mảng")
+    let array1 = []
+    let array2 = []
+
+    function sumOfDivisor(arr1, arr2) {
+        for (let i = 0; i < arrayLength; i++) {
+            arr1[i] = +prompt(`Nhập phần tử thứ ${(i + 1)}`)
+            arr2[i] = 0;
+        }
+        for (let i = 0; i < arrayLength; i++) {
+            for (let j = 1; j <= arr1[i]; j++) {
+            if (arr1[i] % j === 0) {arr2[i] += j}
+            }
+        }
+    }
+   sumOfDivisor(array1,array2);
+    console.log(array1);
+    console.log(array2);
+</script>
+</body>
+</html>
