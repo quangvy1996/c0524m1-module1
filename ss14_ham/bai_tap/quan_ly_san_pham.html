@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sản phẩm</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<input id="input" type="text" placeholder="New product">
+<button type="button" onclick="addNewProduct()">Add</button>
+<br>
+<h2>Display all product</h2><br>
+<h3>Product Name</h3>
+<p id="total"></p>
+<table>
+    <tbody id="body"></tbody>
+</table>
+<script>
+    let products = ["Xiaomi", "Samsung", "Iphone"];
+
+    function displayProducts() {
+        let str = "";
+        for (let i = 0; i < products.length; i++) {
+            str += `<tr>
+                        <td>${products[i]}</td>
+                        <td><button onclick="editProduct(${i})">Edit</button></td>
+                        <td><button onclick="deleteProduct(${i})">Delete</button></td>
+                    </tr>`
+
+        }
+        document.getElementById("body").innerHTML = str;
+        document.getElementById("total").innerHTML = products.length + " products";
+    }
+
+    displayProducts();
+
+    function addNewProduct() {
+        let product = document.getElementById("input").value;
+        if (product === "") {
+            alert("Product name is required")
+        } else {
+            products.push(product.trim());
+            document.getElementById("input").innerHTML = "";
+            displayProducts();
+
+        }
+    }
+
+    function deleteProduct(i) {
+        debugger
+
+        products.splice(i, 1);
+        displayProducts();
+    }
+
+    function editProduct(i) {
+        let newP = prompt("Insert Value");
+        if (newP === "" || newP == null) {
+            alert("Value is required");
+        } else {
+            products.splice(i, 1, newP);
+        }
+        displayProducts()
+    }
+
+</script>
+</body>
+</html>

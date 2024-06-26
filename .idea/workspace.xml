@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/bai_17.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/bai_3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/tong_uoc_phan_tu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/bai_tap/mo_ta_hinh_chu_nhat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/bai_tap/temperature.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/quan_ly_san_pham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/bai_tap/adam_va_eva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/bai_tap/cong_tac_va_bong_den.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss12_mang_1/bai_tap/nhap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_ham/bai_tap/luyen_tap_ham_1/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/luyen_tap_ham_1/bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_ham/bai_tap/luyen_tap_ham_2/bai_7.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/luyen_tap_ham_2/bai_7.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +112,11 @@
       <workItem from="1719199837512" duration="2465000" />
       <workItem from="1719211633145" duration="7189000" />
       <workItem from="1719235847845" duration="1373000" />
-      <workItem from="1719244456560" duration="2055000" />
+      <workItem from="1719244456560" duration="2316000" />
+      <workItem from="1719278886764" duration="11128000" />
+      <workItem from="1719304477978" duration="6244000" />
+      <workItem from="1719324511292" duration="9715000" />
+      <workItem from="1719363371394" duration="4781000" />
     </task>
     <servers />
   </component>

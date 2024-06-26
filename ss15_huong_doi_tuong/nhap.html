@@ -5,36 +5,55 @@
     <title>Title</title>
 </head>
 <body>
+<p id="result"></p>
 <script>
-    let SinhVien = function (ma,ten){
-        // thuộc tính
-        this.ma= ma;
-        this.ten = ten;
-        // hành vi
-        this.hoc = function (monHoc){
-            console.log(this.ten +" dang hoc mon :"+ monHoc)
-        }
-        this.play =function (){
 
+    class ElectricLamp{
+        constructor(status) {
+            this.status = status;
+        }
+        getStatus(){
+            return this.status;
         }
     }
 
-    class Student{
-        constructor(id, name) {
-            // thuộc tính
-            this.id =id;
-            this.name = name;
+    class SwitchButton{
+        constructor(lamp, status) {
+            this.status = status;
+            this.lamp = lamp;
         }
-        // hành vi
-        study(subject){
-            console.log(this.name +" dang hoc mon :"+ subject)
+        getLamp(){
+            return this.lamp;
+        }
+
+        setLamp(lamp){
+            this.lamp = lamp;
+        }
+
+        connectToLamp(Electriclamp){
+            return this.lamp = Electriclamp;
+        }
+
+        switchOff(){
+            this.lamp.status = false;
+            return this.status = false;
+        }
+
+        switchOn(){
+            this.lamp.status = true;
+            return this.status = true;
         }
     }
-let student1 = new Student(11,"chánh");
-let student2 = new Student(2,"chánh");
-let student3 = new Student(3,"chánh");
-let student4 = new Student(11,"chánh");
 
+
+    let electricLamp_1 = new ElectricLamp(false);
+
+    let switchButton_1 = new SwitchButton(electricLamp_1,false); // kết nối giữa  công tắc 1 và đèn 1
+
+    console.log(switchButton_1.switchOn());
+    console.log(electricLamp_1.getStatus());
+    console.log(switchButton_1.switchOff());
+    console.log(electricLamp_1.getStatus());
 
 </script>
 </body>
