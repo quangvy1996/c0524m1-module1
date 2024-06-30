@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/quan_ly_san_pham.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/bai_tap/adam_va_eva.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/bai_tap/cong_tac_va_bong_den.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/flabby_bird.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/case_study/nhap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/bai_20.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/chan_le.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_2/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_2/bai_3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss14_ham/bai_tap/quan_ly_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/quan_ly_san_pham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao_2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,11 +56,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1\case_study" />
+      <recent name="E:\QuangVy\c0524m1-module1\case_study\images" />
+      <recent name="E:\QuangVy\c0524m1-module1" />
       <recent name="E:\QuangVy\c0524m1-module1\ss15_huong_doi_tuong" />
       <recent name="E:\QuangVy\c0524m1-module1\ss15_huong_doi_tuong\bai_tap" />
-      <recent name="E:\QuangVy\c0524m1-module1\ss14_ham" />
-      <recent name="E:\QuangVy\c0524m1-module1\ss12_mang_1\bai_tap" />
-      <recent name="E:\QuangVy\c0524m1-module1" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -116,7 +120,21 @@
       <workItem from="1719278886764" duration="11128000" />
       <workItem from="1719304477978" duration="6244000" />
       <workItem from="1719324511292" duration="9715000" />
-      <workItem from="1719363371394" duration="4781000" />
+      <workItem from="1719363371394" duration="12792000" />
+      <workItem from="1719376431619" duration="1188000" />
+      <workItem from="1719382010806" duration="5167000" />
+      <workItem from="1719390733633" duration="5349000" />
+      <workItem from="1719407929589" duration="3475000" />
+      <workItem from="1719421289864" duration="2429000" />
+      <workItem from="1719450372695" duration="1760000" />
+      <workItem from="1719469853393" duration="7698000" />
+      <workItem from="1719539215899" duration="8864000" />
+      <workItem from="1719559101402" duration="10500000" />
+      <workItem from="1719657120479" duration="6815000" />
+      <workItem from="1719671104962" duration="5280000" />
+      <workItem from="1719677941665" duration="911000" />
+      <workItem from="1719684351584" duration="2378000" />
+      <workItem from="1719715492613" duration="5503000" />
     </task>
     <servers />
   </component>

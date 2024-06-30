@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flabby birde</title>
+</head>
+<body style="background-image: url('images/background.jpg')">
+<center>
+    <canvas id="myCanvas" style="border: 5px solid cadetblue;"></canvas>
+</center>
+</body>
+<script>
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
+    canvas.height = 710;
+    canvas.width = 530;
+
+    const bgImage = new Image();
+    bgImage.src = 'images/bg.png'
+
+    const bird1Image = new Image();
+    bird1Image.src = 'images/bird1.png'
+
+    const birdBotImage = new Image();
+    birdBotImage.src = 'images/birdBot.png'
+
+    const birdTopImage = new Image();
+    birdTopImage.src = 'images/birdTop.png'
+
+    const fgImage = new Image();
+    fgImage.src = 'images/fg.png'
+
+    const flappyBirdTopImage = new Image();
+    flappyBirdTopImage.src = 'images/flappyBird.png'
+
+    const getReadyImage = new Image();
+    getReadyImage.src = 'images/getReady.png'
+
+    const groundImage = new Image();
+    groundImage.src = 'images/ground.png'
+
+    const pipeNorthImage = new Image();
+    pipeNorthImage.src = 'images/pipeNorth.png'
+
+    const pipeSouthImage = new Image();
+    pipeSouthImage.src = 'images/pipeSouth.png'
+
+    let game = "start";
+    // background
+    const bg = {
+        cX: 0,
+        cY: 0,
+        cW: 229,
+        cH: 625,
+        draw: function () {
+            ctx.beginPath();
+            bgImage.addEventListener("load", (e) => {
+                ctx.drawImage(bgImage, this.cX, this.cY, this.cW, this.cH);
+            });
+            bgImage.addEventListener("load", (e) => {
+                ctx.drawImage(bgImage, this.cX + 228, this.cY, this.cW, this.cH);
+            });
+            bgImage.addEventListener("load", (e) => {
+                ctx.drawImage(bgImage, this.cX + 456, this.cY, this.cW, this.cH);
+            });
+
+        }
+    }
+
+
+    // start screen
+    const start = {
+        draw: function () {
+            ctx.beginPath();
+            bird1Image.addEventListener("load", (e) => {
+                ctx.drawImage(bird1Image, 220, 350, 70, 50);
+            });
+            getReadyImage.addEventListener("load", (e) => {
+                ctx.drawImage(getReadyImage, 110, 200, 300, 100);
+            });
+            flappyBirdTopImage.addEventListener("load", (e) => {
+                ctx.drawImage(flappyBirdTopImage, 110, 65, 300, 100);
+            });
+            ctx.beginPath();
+            addEventListener("load", (e) => {
+                ctx.font = '50px Time new roman';
+                ctx.fillStyle = "yellow"
+                ctx.shadowBlur = 10;
+                ctx.fontWeight = 900;
+                ctx.fillText("Click to play", 135, 530);
+                ctx.strokeText("Click to play", 135, 530);
+            });
+        }
+    }
+
+    // ground
+    class Ground {
+        constructor(cX, cY) {
+            this.cX = cX;
+            this.cY = cY;
+            this.cW = 215;
+            this.cH = 143;
+            this.dX = -2;
+        }
+
+        draw() {
+            ctx.beginPath();
+            groundImage.addEventListener("load", (e) => {
+                ctx.drawImage(groundImage, this.cX, this.cY, this.cW, this.cH)
+            })
+        }
+
+    }
+
+    let arrGround = [];
+    for (let i = 0; i < 4; i++) {
+        let ground = new Ground(215 * i, 625);
+        arrGround.push(ground);
+    }
+
+    function drawArrGround() {
+        for (let i = 0; i < arrGround.length; i++) {
+            arrGround[i].draw()
+        }
+    }
+
+    function updateArrGround() {
+        for (let i = 0; i < arrGround.length; i++) {
+            arrGround[i].cX += arrGround[i].dX;
+        }
+        if (arrGround[0].cX <= -336) {
+            arrGround.splice(0, 1);
+            let ground = new Ground(arrGround[2].cX + 215, 625);
+            arrGround.push(ground);
+        }
+
+
+    }
+        canvas.addEventListener("click", function () {
+            switch (game) {
+                case "start":
+                    game = "play";
+                    break
+                case "play":
+                    console.log("chơi game");
+                    break
+                case "end":
+                    console.log("end game");
+            }
+        })
+
+        function draw() {
+            bg.draw();
+            if (game === "start") {
+                start.draw();
+            }
+            drawArrGround();
+        }
+
+        function animate() {
+            window.requestAnimationFrame(animate)
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            draw();
+            updateArrGround()
+        }
+
+        debugger
+        animate()
+</script>
+</html>

@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Quản lý sản phẩm</title>
+   <style>
+       table {
+           border-collapse: collapse;
+       }
+
+           td, th {
+               border: 1px solid;
+               text-align: center;
+               padding: 8px;
+           }
+   </style>
 </head>
 <body>
 <h2>Add New Product</h2>
@@ -13,6 +24,11 @@
 <h3>Product Name</h3>
 <p id="total"></p>
 <table>
+    <tr>
+        <th>STT</th>
+        <th>Product Name</th>
+        <th colspan="2">Customize</th>
+    </tr>
     <tbody id="body"></tbody>
 </table>
 <script>
@@ -22,6 +38,7 @@
         let str = "";
         for (let i = 0; i < products.length; i++) {
             str += `<tr>
+                        <td>${i}</td>
                         <td>${products[i]}</td>
                         <td><button onclick="editProduct(${i})">Edit</button></td>
                         <td><button onclick="deleteProduct(${i})">Delete</button></td>
@@ -44,10 +61,9 @@
             displayProducts();
 
         }
-    }
 
+    }
     function deleteProduct(i) {
-        debugger
 
         products.splice(i, 1);
         displayProducts();
@@ -62,7 +78,16 @@
         }
         displayProducts()
     }
-
+    class product {
+        constructor(name) {
+            this.name = name;
+        }
+        getName(){
+            return this.name
+        }
+        }
+        let product1 = new product("xiaomi")
+    console.log(product1.getName())
 </script>
 </body>
 </html>
