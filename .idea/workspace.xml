@@ -5,15 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/case_study/flabby_bird.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/nhap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/bai_20.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/bai_tap_them/chan_le.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/bird.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/building.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/demo_flappy_bird.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/lowerBar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flappy_bird-live/upperBar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_2/bai_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss11_cau_truc_lap_2/bai_tap/luyen_tap_2/bai_3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss14_ham/bai_tap/quan_ly_san_pham.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss14_ham/bai_tap/quan_ly_san_pham.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss15_huong_doi_tuong/nhap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss5_html_form_table/thuc_hanh/tao_bang_nang_cao/tao_bang_nang_cao_2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/flabby_bird.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/flabby_bird.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/nhap.html" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/nhap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +43,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/QuangVy/c0524m1-module1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.editor",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\QuangVy\c0524m1-module1\case_study" />
       <recent name="E:\QuangVy\c0524m1-module1\case_study\images" />
@@ -134,7 +140,9 @@
       <workItem from="1719671104962" duration="5280000" />
       <workItem from="1719677941665" duration="911000" />
       <workItem from="1719684351584" duration="2378000" />
-      <workItem from="1719715492613" duration="5503000" />
+      <workItem from="1719715492613" duration="6808000" />
+      <workItem from="1719735251457" duration="2206000" />
+      <workItem from="1719795543246" duration="13895000" />
     </task>
     <servers />
   </component>

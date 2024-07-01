@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" style="border: 1px solid red;"></canvas>
+<h3 id="score">Score: 0</h3>
+<button onclick="againPlay()">Again</button>
+<script>
+    let canvas = document.getElementById("canvas");
+    let context = canvas.getContext('2d');
+    canvas.height = 500;
+    canvas.width = 1000;
+
+    let building = new Image();
+    building.src = 'building.jpg';
+
+    let bird = new Image();
+    bird.src = 'bird.png';
+
+    let upperBar = new Image();
+    upperBar.src = 'upperBar.png';
+    upperBar.width = 50;
+    upperBar.height = 200
+
+    let lowerBar = new Image();
+    lowerBar.src = 'lowerBar.png';
+    lowerBar.width = 50;
+    lowerBar.height = 200
+
+    let birdObj = {
+        x: canvas.width / 5,
+        y: canvas.height / 3
+    }
+
+    let bars = [];
+    bars.push({
+        x: canvas.width - 50,
+        y: 0
+    })
+    let between = 200;
+
+    function run() {
+        context.drawImage(building, 0, 0, 1000, 500);
+        context.drawImage(bird, birdObj.x, birdObj.y, 40, 40);
+
+        for (let i = 0; i < bars.length; i++) {
+            context.drawImage(upperBar, bars[i].x, bars[i].y);
+            context.drawImage(lowerBar, bars[i].x, bars[i].y + upperBar.height + between);
+
+            // khi than ba di chuyển được 1/2 màn hình => thêm mới 1 thanh
+            if (bars[i].x === canvas.width / 2) {
+                bars.push({
+                    x: canvas.width - 50,
+                    y: -Math.round(Math.random() * upperBar.height)
+                })
+            }
+            bars[i].x += -1;
+        }
+        birdObj.y += 2;
+        requestAnimationFrame(run);
+    }
+
+    // bước nhảy của chim
+    document.addEventListener('keydown', function (event) {
+        if (event.key === " ") {
+            birdObj.y -= 50;
+        }
+    })
+
+    run();
+</script>
+</body>
+</html>

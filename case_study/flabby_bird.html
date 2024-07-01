@@ -71,25 +71,25 @@
     // start screen
     const start = {
         draw: function () {
-            ctx.beginPath();
-            bird1Image.addEventListener("load", (e) => {
-                ctx.drawImage(bird1Image, 220, 350, 70, 50);
-            });
-            getReadyImage.addEventListener("load", (e) => {
-                ctx.drawImage(getReadyImage, 110, 200, 300, 100);
-            });
-            flappyBirdTopImage.addEventListener("load", (e) => {
-                ctx.drawImage(flappyBirdTopImage, 110, 65, 300, 100);
-            });
-            ctx.beginPath();
-            addEventListener("load", (e) => {
-                ctx.font = '50px Time new roman';
-                ctx.fillStyle = "yellow"
-                ctx.shadowBlur = 10;
-                ctx.fontWeight = 900;
-                ctx.fillText("Click to play", 135, 530);
-                ctx.strokeText("Click to play", 135, 530);
-            });
+            // ctx.beginPath();
+            // bird1Image.addEventListener("load", (e) => {
+            //     ctx.drawImage(bird1Image, 220, 350, 70, 50);
+            // });
+            // getReadyImage.addEventListener("load", (e) => {
+            //     ctx.drawImage(getReadyImage, 110, 200, 300, 100);
+            // });
+            // flappyBirdTopImage.addEventListener("load", (e) => {
+            //     ctx.drawImage(flappyBirdTopImage, 110, 65, 300, 100);
+            // });
+            // ctx.beginPath();
+            // addEventListener("load", (e) => {
+            //     ctx.font = '50px Time new roman';
+            //     ctx.fillStyle = "yellow"
+            //     ctx.shadowBlur = 10;
+            //     ctx.fontWeight = 900;
+            //     ctx.fillText("Click to play", 135, 530);
+            //     ctx.strokeText("Click to play", 135, 530);
+            // });
         }
     }
 
@@ -133,38 +133,163 @@
             let ground = new Ground(arrGround[2].cX + 215, 625);
             arrGround.push(ground);
         }
-
-
     }
-        canvas.addEventListener("click", function () {
-            switch (game) {
-                case "start":
-                    game = "play";
-                    break
-                case "play":
-                    console.log("chơi game");
-                    break
-                case "end":
-                    console.log("end game");
-            }
-        })
 
-        function draw() {
-            bg.draw();
-            if (game === "start") {
-                start.draw();
-            }
-            drawArrGround();
+    //pipes
+    class Pipe {
+        constructor(cX, cY, space) {
+            this.cX = cX;
+            this.cY = cY;
+            this.space = space;
+            this.cW = 50;
+            this.cH = 710;
+            this.dX = -2;
         }
 
-        function animate() {
-            window.requestAnimationFrame(animate)
+        draw() {
+            ctx.beginPath();
+            pipeNorthImage.addEventListener("load", (e) => {
+                console.log(pipeNorthImage)
+                console.log(this)
+                ctx.drawImage(pipeNorthImage, this.cX, this.cY, this.cW, this.cH)
+            });
+            pipeSouthImage.addEventListener("load", (e) => {
+                ctx.drawImage(pipeSouthImage, this.cX, this.cY + this.cH + this.space, this.cW, this.cH)
+            });
+        }
+    }
+
+    function random(min, max) {
+        return Math.ceil(Math.random() * (max - min) + min);
+    }
+
+    let arrPipes = [];
+
+    function addArrPipes() {
+        for (let i = 1; i <= 3; i++) {
+            let pipe = new Pipe(random(0,500) , random(-650,0), 300);
+            arrPipes.push(pipe);
+        }
+    }
+
+    addArrPipes();
+
+    function drawArrPipes() {
+
+        for (let i = 0; i < arrPipes.length; i++) {
+            console.log("sfsss")
+            arrPipes[i].draw();
+
+        }
+    }
+
+    function updateArrPipes() {
+        for (let i = 0; i < arrPipes.length; i++) {
+            arrPipes[i].cX += arrPipes[i].dX;
+        }
+        if (arrPipes[0].cX <= -arrPipes[0].cW) {
+            arrPipes.splice(0, 1);
+            let pipe = new Pipe(arrPipes[arrPipes.length - 1].cX + random(400, 500), random(-660, -300), random(250, 300));
+            arrPipes.push(pipe);
+        }
+    }
+    // bird
+    function Bird(cX, cY) {
+        this.cX = cX;
+        this.cY = cY;
+        this.cW = 80;
+        this.cH = 56;
+        this.speed = 0;
+        this.a = 0.5;
+        this.image = birdTopImage;
+
+        this.draw = function () {
+            ctx.beginPath();
+            ctx.drawImage(birdTopImage, this.cX, this.cY, this.cW, this.cH);
+        }
+        this.update = function () {
+            this.speed += this.a;
+            this.cY += this.speed;
+        }
+    }
+
+    let bird = new Bird(130, 300);
+    canvas.addEventListener("click", moveBird);
+
+    function moveBird() {
+        if (game === "start") {
+            game = "play";
+        }
+        if (game === "play") {
+            bird.speed = -8;
+            bird.image = birdTopImage;
+        }
+        if (game === "end") {
+            if(event.offsetX>110 && event.offsetX<400 && event.offsetY>355 && event.offsetY<405){
+                score.value = 0;
+                arrPipes = [];
+                addArrPipes();
+                bird.speed = 0;
+                bird.cY = 300;
+                gameOver=false;
+                game = "start"
+            }
+        }
+    }
+
+    function draw() {
+        bg.draw();
+        drawArrPipes();
+        drawArrGround();
+        if (game === "start") {
+            start.draw();
+        }
+        if (game === "play") {
+            score.draw();
+        }
+        // if (game === "end") {
+        //     ctx.beginPath();
+        //     ctx.font = '50px Arial';
+        //     ctx.fillStyle = "#FFFF00"
+        //     ctx.shadowBlur = 10;
+        //     ctx.fontWeight = 900;
+        //     ctx.fillText("Your score: " + score.value, 110, 200);
+        //     ctx.strokeText("Your score: " + score.value, 110, 200);
+        //     ctx.fillText("GAME OVER", 100, 250);
+        //     ctx.strokeText("GAME OVER", 100, 250);
+        //     ctx.fillStyle = "black"
+        //     ctx.strokeText("PLAY AGAIN", 110, 400);
+        //     ctx.fillText("PLAY AGAIN", 110, 400);
+        //     ctx.strokeRect(110,355,300,50);
+        //
+        //     ctx.font = '20px Arial';
+        //     ctx.fillStyle = "black"
+        //     ctx.strokeText("click here", 210, 350);
+        //     ctx.fillText("click here", 210, 350);
+        // }
+
+        bird.draw();
+    }
+
+    function update() {
+        if (game === "play") {
+            updateArrPipes();
+            updateArrGround();
+            bird.update();
+        }
+    }
+
+    function animate() {
+            //if (!gameOver) {
+            // setTimeout(animate, 1000 / 60);
+            // // }
             ctx.clearRect(0, 0, canvas.width, canvas.height);
             draw();
-            updateArrGround()
+
+           // requestAnimationFrame(animate)
         }
 
-        debugger
-        animate()
+    debugger
+    animate()
 </script>
 </html>
