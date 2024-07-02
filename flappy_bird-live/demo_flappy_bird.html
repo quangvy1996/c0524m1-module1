@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        #but{
+            width: 200px;
+            height: 50px;
+            border-radius: 7px;
+            background-color: yellow;
+            border: none;
+            font-size: 20px;
+        }
+        #but{
+            cursor: pointer;
+            box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.75);;
+        }
+    </style>
 </head>
-<body>
+<body style="background-image: url('beautiful-blue-sky-background-free-vector.jpg')">
 <center>
 <canvas id="canvas" style="border: 1px solid red;"></canvas><br>
-    <button onclick="playAgain()">Again</button>
+    <button id="but" onclick="playAgain()">Again</button>
 </center>
 <script>
     let canvas = document.getElementById("canvas");
