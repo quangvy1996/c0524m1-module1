@@ -5,9 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<canvas id="canvas" style="border: 1px solid red;"></canvas>
-<h3 id="score">Score: 0</h3>
-<button onclick="againPlay()">Again</button>
+<center>
+<canvas id="canvas" style="border: 1px solid red;"></canvas><br>
+    <button onclick="playAgain()">Again</button>
+</center>
 <script>
     let canvas = document.getElementById("canvas");
     let context = canvas.getContext('2d');
@@ -31,7 +32,7 @@
     lowerBar.height = 200
 
     let birdObj = {
-        x: canvas.width / 5,
+        x: canvas.width / 2,
         y: canvas.height / 3
     }
 
@@ -42,34 +43,75 @@
     })
     let between = 200;
 
+
+    function Score(value, cX, cY) {
+        this.value = value;
+        this.cX = cX;
+        this.cY = cY;
+        this.draw = function () {
+            context.beginPath();
+            context.font = '50px Arial';
+            context.fillStyle = "yellow"
+            context.shadowBlur = 10;
+            context.fontWeight = 900;
+            context.fillText("Score: " + score.value, this.cX, this.cY);
+            context.strokeText("Score: " + score.value, this.cX, this.cY);
+        }
+    }
+
+    let score = new Score(0, canvas.width / 2 - 100, 100);
+
     function run() {
         context.drawImage(building, 0, 0, 1000, 500);
         context.drawImage(bird, birdObj.x, birdObj.y, 40, 40);
 
         for (let i = 0; i < bars.length; i++) {
+
             context.drawImage(upperBar, bars[i].x, bars[i].y);
             context.drawImage(lowerBar, bars[i].x, bars[i].y + upperBar.height + between);
-
-            // khi than ba di chuyển được 1/2 màn hình => thêm mới 1 thanh
+            bars[i].x += -3;
+            score.draw()
+            // khi thanh ba di chuyển được 1/2 màn hình => thêm mới 1 thanh
             if (bars[i].x === canvas.width / 2) {
                 bars.push({
                     x: canvas.width - 50,
                     y: -Math.round(Math.random() * upperBar.height)
                 })
             }
-            bars[i].x += -1;
+
+            //cộng điểm khi di chuyển
+            if (bars[i].x === birdObj.x) {
+                score.value++;
+
+            }
+            // check game over;
+            if (birdObj.x + bird.width > bars[i].x && birdObj.x < bars[i].x + upperBar.width
+                && (birdObj.y < bars[i].y + upperBar.height
+                    || birdObj.y > bars[i].y + upperBar.height + between)) {
+                context.beginPath();
+                context.font = '50px Arial';
+                context.fillStyle = "pink";
+                context.strokeText("Game over", 370, 350);
+                context.fillText("Game over", 370, 350);
+                return;
+            }
         }
         birdObj.y += 2;
         requestAnimationFrame(run);
-    }
+        }
 
     // bước nhảy của chim
-    document.addEventListener('keydown', function (event) {
-        if (event.key === " ") {
+    document.addEventListener('click', function (event) {
             birdObj.y -= 50;
-        }
     })
+    // chơi lại
+    // document.addEventListener('click', function (event) {
+    //     location.reload()
 
+    // })
+    function playAgain() {
+        location.reload();
+    }
     run();
 </script>
 </body>
