@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function missingValue(arrayA, arrayB) {
+        let newArray = [];
+        for (let i = 0; i < arrayB.length; i++) {
+            if (!arrayA.includes(arrayB[i])) {
+                newArray.push(arrayB[i]);
+            }
+        }
+        return newArray;
+    }
+
+    console.log(missingValue([7, 2, 5, 3, 5, 3], [7, 2, 5, 4, 6, 3, 5, 3]));
+</script>
+</body>
+</html>

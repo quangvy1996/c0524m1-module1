@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = 'aabcc';
+    let b = 'adcaa';
+
+    function commonCharacterCount(a, b) {
+        let newArray = [];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < b.length; j++) {
+                if (a[i] == b[j]) {
+                    let ai = a.substr(i, 1, '');
+                    let bj = b.substr(j, 1, '');
+                    newArray.push(ai, bj);
+                    break;
+                }
+            }
+        }
+        console.log(newArray.length / 2);
+    }
+
+    commonCharacterCount(a, b);
+</script>
+</body>
+</html>

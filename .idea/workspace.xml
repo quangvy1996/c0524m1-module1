@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4feb0dbc-5ec3-455e-b58e-64f9a9016e9f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flappy_bird-live/nhap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kiem_tra_cuoi_module1/bai_1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kiem_tra_cuoi_module1/bai_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kiem_tra_cuoi_module1/bai_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kiem_tra_cuoi_module1/bai_4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nhap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nhap1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/nhap.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/flappy_bird-live/demo_flappy_bird.html" beforeDir="false" afterPath="$PROJECT_DIR$/flappy_bird-live/demo_flappy_bird.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flappy_bird-live/nhap.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +60,11 @@
       <recent name="E:\QuangVy\c0524m1-module1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\QuangVy\c0524m1-module1" />
+      <recent name="E:\QuangVy\c0524m1-module1\case_study" />
       <recent name="E:\QuangVy\c0524m1-module1\flappy_bird-live" />
       <recent name="E:\QuangVy\c0524m1-module1\flappy_bird-live\.idea" />
-      <recent name="E:\QuangVy\c0524m1-module1\case_study" />
       <recent name="E:\QuangVy\c0524m1-module1\case_study\images" />
-      <recent name="E:\QuangVy\c0524m1-module1" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -139,6 +144,12 @@
       <workItem from="1719815771945" duration="5676000" />
       <workItem from="1719823074738" duration="5973000" />
       <workItem from="1719839355724" duration="3011000" />
+      <workItem from="1719882134798" duration="7374000" />
+      <workItem from="1719902040671" duration="2831000" />
+      <workItem from="1719911102325" duration="2637000" />
+      <workItem from="1719931464431" duration="9431000" />
+      <workItem from="1719963212729" duration="1171000" />
+      <workItem from="1719972081645" duration="6993000" />
     </task>
     <servers />
   </component>

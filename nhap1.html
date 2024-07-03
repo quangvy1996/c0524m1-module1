@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Add new product</legend>
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="name">
+        <label for="price"></label>
+        <input type="text" id="price" placeholder="price">
+        <label for="color"></label>
+        <input type="text" id="color" placeholder="color">
+        <button type="button" onclick="addNewProduct()">ADD</button>
+        <button type="button" onclick="edit()">EDIT</button>
+    </fieldset>
+</form>
+
+<h2>Display All Product</h2>
+<p id="total"></p>
+<table>
+    <tr>
+        <th>Product name</th>
+        <th>Price</th>
+        <th>Color</th>
+        <th colspan="2">Action</th>
+    </tr>
+    <tbody id="body">
+
+    </tbody>
+</table>
+<script>
+    class MobilePhone {
+        constructor(name, price, color) {
+            this.name = name;
+            this.color = color;
+            this.price = price;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setColor(color) {
+            this.color = color;
+        }
+
+        getColor() {
+            return this.color
+        }
+
+        setPrice(price) {
+            this.price = price;
+        }
+
+        getPrice() {
+            return this.price
+        }
+    }
+
+    let product1 = new MobilePhone("Xiaomi", 100, "black");
+    let product2 = new MobilePhone("Iphone", 200, "gold");
+    let product3 = new MobilePhone("Iphone", 300, "white");
+    let products = [product1, product2, product3]
+    let tempIndex;
+    function displayProduct() {
+        let str = "";
+        for (let i = 0; i < products.length; i++) {
+            str += `<tr>
+                            <td>${products[i].getName()}</td>
+                            <td>${products[i].getPrice()}</td>
+                            <td>${products[i].getColor()}</td>
+                            <td><button onclick="sendInforToEditForm(${i})">Edit</button></td>
+                            <td><button onclick="removeProduct(${i})">Delete</button></td>
+                         </tr>`
+        }
+        document.getElementById("body").innerHTML = str;
+        document.getElementById("total").innerHTML = products.length;
+    }
+
+    displayProduct()
+
+    function addNewProduct() {
+        let productName = document.getElementById("name").value;
+        let productPrice = +document.getElementById("price").value;
+        let productColor = document.getElementById("color").value;
+
+        if (productName === "") {
+            alert("Product name is required")
+        } else {
+            let newProduct = new MobilePhone(productName,productPrice,productColor)
+            products.push(newProduct);
+            document.getElementById("name").innerHTML = "";
+            document.getElementById("price").innerHTML = "";
+            document.getElementById("color").innerHTML = "";
+            displayProduct();
+            alert("Add new product sucess")
+        }
+    }
+    function removeProduct(index){
+        let check = confirm("Bạn có muốn xóa ko?")
+        if(check) {
+            products.splice(index, 1);
+            displayProduct();
+            alert("Xóa thành công")
+        }
+    }
+    function sendInforToEditForm(index) {
+        tempIndex = index
+        document.getElementById("name").value = products[index].getName();
+        document.getElementById("price").value = +products[index].getPrice();
+        document.getElementById("color").value = products[index].getColor();
+    }
+    function edit(){
+        let productName = document.getElementById("name").value;
+        let productPrice = +document.getElementById("price").value;
+        let productColor = document.getElementById("color").value;
+
+        if (productName === "") {
+            alert("Product name is required")
+        } else {
+            let newProduct = new MobilePhone(productName,productPrice,productColor)
+            products[tempIndex] = (newProduct);
+            document.getElementById("name").innerHTML = "";
+            document.getElementById("price").innerHTML = "";
+            document.getElementById("color").innerHTML = "";
+            displayProduct();
+            alert("Edit new product sucess")
+        }
+
+    }
+</script>
+</body>
+</html>

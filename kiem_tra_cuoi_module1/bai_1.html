@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng chẵn và tổng lẻ</title>
+</head>
+<body>
+<script>
+    let n;
+    do {
+        n = +prompt('Nhập số n')
+    } while (n > 20 || n < 0)
+    let even = 0;
+    let odd = 0;
+    let arr = [];
+    for (let i = 0; i <= n; i++) {
+        arr[i] = +prompt("Nhập phần tu thứ " + (i + 1))
+    }
+    document.write("mảng vua nhập là " + arr + "<br>");
+    for (let i = 0; i <= n; i++) {
+        if (arr[i] % 2 === 0) {
+            even += arr[i]
+        } else {
+            odd += arr[i]
+        }
+    }
+    let result = even - odd;
+    document.write("kêt quả "+ result);
+</script>
+</body>
+</html>

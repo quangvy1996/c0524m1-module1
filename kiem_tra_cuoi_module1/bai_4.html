@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table {
+            border-collapse: collapse
+        }
+
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Mobile phone</legend>
+        <label for="code"></label>
+        <input type="text" id="code" placeholder="Mã điện thoại">
+        <label for="name"></label>
+        <input type="text" id="name" placeholder="Tên">
+        <label for="maker"></label>
+        <input type="text" id="maker" placeholder="Hãng sản xuất">
+        <label for="price"></label>
+        <input type="number" id="price" placeholder="Giá">
+        <button type="button" onclick="addNewProduct()">ADD</button>
+
+    </fieldset>
+    <table>
+        <tr>
+            <th>Mã điện thoại</th>
+            <th>Tên</th>
+            <th>Hãng sản xuất</th>
+            <th>Giá</th>
+        </tr>
+
+        <tbody id="body">
+
+        </tbody>
+    </table>
+</form>
+<script>
+    class MobilePhone {
+        constructor(code, name, maker, price) {
+            this.code = code;
+            this.name = name;
+            this.maker = maker
+            this.price = price;
+        }
+
+        setCode(code) {
+            this.code = code;
+        }
+
+        getCode() {
+            return this.code;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getName() {
+            return this.name
+        }
+
+        setMaker(maker) {
+            this.maker = maker;
+        }
+
+        getMaker() {
+            return this.maker
+        }
+
+        setPrice(price) {
+            this.price = price;
+        }
+
+        getPrice() {
+            return this.price
+        }
+    }
+
+    let phone1 = new MobilePhone("a1", "Xiaomi", "china", 100);
+    let phone2 = new MobilePhone("a2", "Iphone", "USA", 200);
+    let phone3 = new MobilePhone("a3", "Oppo", "vietnam", 300);
+    let phones = [phone1, phone2, phone3]
+
+    function displayPhone() {
+        let str = "";
+        for (let i = 0; i < phones.length; i++) {
+            str += `<tr>
+                            <td>${phones[i].getCode()}</td>
+                            <td>${phones[i].getName()}</td>
+                            <td>${phones[i].getMaker()}</td>
+                            <td>${phones[i].getPrice()}</td>
+                         </tr>`
+        }
+
+        document.getElementById("body").innerHTML = str;
+    }
+
+    displayPhone();
+
+    function addNewProduct() {
+        let phoneCode = document.getElementById("code").value;
+        let phoneName = document.getElementById("name").value;
+        let phoneMaker = document.getElementById("maker").value;
+        let phonePrice = document.getElementById("price").value;
+
+        if (phoneName === "" || phoneCode === "") {
+            alert("Phone and code name is required")
+        } else {
+            let newPhone = new MobilePhone(phoneCode, phoneName, phoneMaker, phonePrice)
+            phones.push(newPhone);
+            document.getElementById("code").innerHTML = "";
+            document.getElementById("name").innerHTML = "";
+            document.getElementById("maker").innerHTML = "";
+            document.getElementById("price").innerHTML = "";
+            displayPhone()
+            alert("Add new phone successfully")
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let uppercase = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+
+    function addString(string) {
+        let count = 0;
+        for (let i = 0; i < string.length; i++) {
+            if (uppercase.includes(string[i])) {
+                count++
+            }
+        }
+        if (count === 0) {
+            document.write("The string is not contain upper char")
+        }
+
+        document.write(count);
+    }
+
+    let string = prompt("Nhập chuỗi");
+    addString(string)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function payroll(salary) {
+        if (salary >= 15000000) {
+            return (salary / 100) * 80;
+        } else if (salary >= 7000000) {
+            return (salary / 100) * 90;
+        } else {
+            return (salary / 100) * 95;
+        }
+    }
+    console.log(payroll(7000000));
+</script>
+</body>
+</html>

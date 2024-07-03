@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function drawRightTriangle(n) {
+        for (let i = 0; i < n; i++) {
+            for (let j = 0; j <= i; j++) {
+                if (i === n - 1) {
+                    document.write('*');
+                } else if (j === 0 || j === i) {
+                    document.write('*');
+                } else {
+                    document.write('&ensp;');
+                }
+            }
+            document.write('<br>');
+        }
+    }
+
+    drawRightTriangle(5);
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    let sls = [0, 0, 0, 0, 0, 0]
+
+    function choose1() {
+        let ds = `DS:\n`;
+        for (let i = 0; i < sls.length; i++) {
+            if (sls[i] !== 0) {
+                ds += `${i + 1}.${array[i]}: ${sls[i]}\n`;
+            }
+
+        }
+        alert(ds);
+    }
+
+    function getMenu() {
+        let menu = `Menu:\n`;
+        for (let i = 0; i < array.length; i++) {
+            menu += `${i + 1}.${array[i]}\n`;
+        }
+        return menu;
+    }
+
+    let choose = -1
+    do {
+        choose = +prompt(getMenu() + "\n" + "7.ds");
+        if (choose === 7) {
+            choose1();
+        }
+        let sl = prompt("SL" + array[choose - 1] + ":")
+        sls[choose - 1] = sl;
+    } while (choose !== 7)
+</script>
+</body>
+</html>
